@@ -1,219 +1,284 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matheus Souza | AI & Data Scientist Portfolio</title>
+  <title>Matheus Souza | Data Science & AI Portfolio</title>
+  
+  <!-- CSS Principal -->
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 (Ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="page-wrapper">
+  <!-- Background Gradients -->
+  <div class="bg-glow glow-top-left"></div>
+  <div class="bg-glow glow-bottom-right"></div>
 
-    <!-- HERO BENTO -->
-    <header class="bento-hero">
-      <div class="hero-intro">
-        <div class="availability-badge">
-          <span class="dot"></span> [ STATUS: DISPONÍVEL PARA ESTÁGIO EM IA & DADOS ]
+  <div class="container">
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+      <div class="hero-card main-hero">
+        <div class="status-badge">
+          <span class="pulse-dot"></span> Disponível para Estágio em IA & Dados
         </div>
-        <h1>Matheus Souza</h1>
-        <p class="subtitle" id="typewriter"></p>
-        
+        <h1 class="hero-title">Matheus Souza</h1>
+        <p class="hero-subtitle"><span id="typewriter"></span><span class="cursor">|</span></p>
+
         <div class="hero-actions">
-          <a href="https://www.linkedin.com/in/matheussouzagomes" target="_blank" rel="noopener" class="btn-main">
-            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          <a href="https://www.linkedin.com/in/matheussouzagomes" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
           </a>
-          <a href="Matheus Souza - Curriculo.pdf" target="_blank" class="btn-sub">
+          <a href="Matheus Souza - Curriculo.pdf" target="_blank" class="btn btn-secondary">
             <i class="fa-solid fa-file-pdf"></i> Currículo PDF
           </a>
-          <a href="mailto:itsemezing@outlook.com" class="btn-sub">
-            <i class="fa-solid fa-envelope"></i> Contato Direto
+          <a href="mailto:itsemezing@outlook.com" class="btn btn-secondary">
+            <i class="fa-solid fa-envelope"></i> E-mail
           </a>
         </div>
       </div>
 
-      <div class="hero-quick-stats">
-        <div class="mini-stat">
-          <span class="num">SENAI CIMATEC</span>
-          <span class="lbl">Ciência de Dados & IA (Salvador-BA)</span>
+      <div class="hero-card side-info">
+        <div class="info-block">
+          <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Instituição</span>
+          <span class="info-value">SENAI CIMATEC</span>
+          <span class="info-sub">Salvador - BA</span>
         </div>
-        <div class="mini-stat">
-          <span class="num">Python & MySQL</span>
-          <span class="lbl">Core Stack & Versionamento Git</span>
+        <div class="divider"></div>
+        <div class="info-block">
+          <span class="info-label"><i class="fa-solid fa-code"></i> Foco Técnico</span>
+          <span class="info-value">Python & Data Analytics</span>
+          <span class="info-sub">MySQL, OpenCV e Git</span>
         </div>
       </div>
     </header>
 
     <!-- SOBRE MIM -->
-    <section class="section-block">
-      <h2 class="section-title"><i class="fa-solid fa-user-astronaut"></i> 01. // Sobre_Mim</h2>
-      <div class="content-card bio-card">
+    <section class="section">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>Sobre Mim</h2>
+      </div>
+      <div class="card bio-card">
         <p>
-          Estudante de Ciência de Dados & Inteligência Artificial no <strong>SENAI CIMATEC</strong>. 
-          Focado em desenvolvimento de software e soluções analíticas baseadas em dados, possuo 
-          experiência prática em Python, MySQL e versionamento com Git/GitHub. 
-          Em busca constante de oportunidades de estágio onde possa transformar problemas complexos 
-          em código limpo e insights acionáveis.
+          Estudante de <strong>Ciência de Dados & Inteligência Artificial</strong> no <strong>SENAI CIMATEC</strong>. 
+          Focado no desenvolvimento de software e na criação de soluções analíticas orientadas a dados. Possuo experiência prática em 
+          estruturação de dados com Python e MySQL, além de versionamento com Git e aplicação de visão computacional.
+          Busco oportunidades de estágio para aplicar raciocínio lógico e análise técnica na resolução de problemas complexos.
         </p>
-        <div class="tech-chips">
-          <span><i class="fa-brands fa-python"></i> Python</span>
-          <span><i class="fa-solid fa-database"></i> MySQL</span>
-          <span><i class="fa-solid fa-brain"></i> OpenCV & IA</span>
-          <span><i class="fa-brands fa-git-alt"></i> Git/GitHub</span>
-          <span><i class="fa-brands fa-js"></i> JavaScript</span>
+        <div class="tag-cloud">
+          <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="tag"><i class="fa-solid fa-database"></i> MySQL</span>
+          <span class="tag"><i class="fa-solid fa-eye"></i> OpenCV</span>
+          <span class="tag"><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+          <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
         </div>
       </div>
     </section>
 
     <!-- PROJETO FLAGSHIP -->
-    <section class="section-block">
-      <h2 class="section-title"><i class="fa-solid fa-star"></i> 02. // Projeto_Flagship</h2>
-      
-      <div class="flagship-bento">
-        <div class="flagship-info">
-          <span class="badge-tag">VISÃO COMPUTACIONAL & IOT • SALVADOR-BA</span>
-          <h3>Monitoramento da Alimentação Escolar</h3>
+    <section class="section">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Projeto em Destaque</h2>
+      </div>
+
+      <div class="card flagship-card">
+        <div class="flagship-content">
+          <div class="flagship-header">
+            <span class="category-badge"><i class="fa-solid fa-microchip"></i> Visão Computacional & IoT</span>
+            <span class="location-badge"><i class="fa-solid fa-location-dot"></i> Salvador - BA</span>
+          </div>
+          <h3>Monitoramento da Alimentação Escolar com Base em Dados</h3>
           <p>
-            Liderança de projeto tecnológico voltado para a análise automatizada de consumo e desperdício de alimentos em ambiente escolar. 
-            Combina varredura inteligente por QR Code com processamento avançado de imagens via <strong>OpenCV</strong> para transformar dados brutos em inteligência nutricional estruturada.
+            Liderança e desenvolvimento de um sistema para análise automatizada do consumo e desperdício de alimentos no ambiente escolar. 
+            A solução integra escaneamento por <strong>QR Code</strong> para identificação ágil e processamento de imagens via <strong>OpenCV</strong> 
+            para transformação de dados brutos em métricas acionáveis.
           </p>
-          <div class="project-tags">
+          <div class="flagship-tags">
             <span>Python</span>
             <span>OpenCV</span>
             <span>QR Code API</span>
             <span>Data Pipeline</span>
           </div>
         </div>
-        
-        <div class="flagship-metrics">
-          <div class="metric-item">
-            <strong>Visão Computacional</strong>
-            <span>Processamento e segmentação de imagem via OpenCV</span>
+
+        <div class="flagship-stats">
+          <div class="stat-box">
+            <div class="stat-icon"><i class="fa-solid fa-camera"></i></div>
+            <div>
+              <h4>Processamento de Imagem</h4>
+              <p>Segmentação e análise visual automatizada com OpenCV</p>
+            </div>
           </div>
-          <div class="metric-item">
-            <strong>Identificação IoT</strong>
-            <span>Integração com leitura rápida de QR Code</span>
+          <div class="stat-box">
+            <div class="stat-icon"><i class="fa-solid fa-qrcode"></i></div>
+            <div>
+              <h4>Coleta IoT via QR Code</h4>
+              <p>Rastreamento rápido e registro individualizado de dados</p>
+            </div>
           </div>
-          <div class="metric-item highlight">
-            <strong>Data-Driven</strong>
-            <span>Foco analítico na redução de desperdício escolar</span>
+          <div class="stat-box highlight">
+            <div class="stat-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <div>
+              <h4>Análise Nutricional</h4>
+              <p>Geração de relatórios para redução do desperdício de alimentos</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- OUTROS PROJETOS -->
-    <section class="section-block">
-      <h2 class="section-title"><i class="fa-solid fa-code-branch"></i> 03. // Outros_Projetos</h2>
+    <section class="section">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2>Outros Projetos</h2>
+      </div>
 
       <div class="projects-grid">
-        <a href="https://github.com/emeueme/controle-financeiro-python" target="_blank" rel="noopener" class="project-card">
-          <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <a href="https://github.com/emeueme/controle-financeiro-python" target="_blank" rel="noopener" class="card project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-wallet"></i></div>
+            <i class="fa-solid fa-arrow-up-right-from-square external-link"></i>
+          </div>
           <h3>Controle Financeiro Pessoal</h3>
-          <p>Aplicação desktop robusta em Python com MySQL, painel de controle interativo e geração automatizada de relatórios em PDF/Excel.</p>
-          <span class="card-link">Ver Repositório <i class="fa-solid fa-arrow-right-long"></i></span>
+          <p>Aplicação em Python integrada ao MySQL para gestão de finanças pessoais, geração de relatórios e controle de fluxo de caixa.</p>
+          <div class="project-footer">
+            <span>Python • MySQL</span>
+          </div>
         </a>
 
-        <a href="https://github.com/emeueme/Classificador-de-nivel-de-Heroi" target="_blank" rel="noopener" class="project-card">
-          <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+        <a href="https://github.com/emeueme/Classificador-de-nivel-de-Heroi" target="_blank" rel="noopener" class="card project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <i class="fa-solid fa-arrow-up-right-from-square external-link"></i>
+          </div>
           <h3>Classificador de Nível</h3>
-          <p>Projeto estruturado em JavaScript focado em lógica de programação avançada, tomada de decisão e regras de negócio escaláveis.</p>
-          <span class="card-link">Ver Repositório <i class="fa-solid fa-arrow-right-long"></i></span>
+          <p>Algoritmo em JavaScript construído para classificação baseada em tomadas de decisão e regras de negócio condicionais.</p>
+          <div class="project-footer">
+            <span>JavaScript • Lógica</span>
+          </div>
         </a>
 
-        <a href="https://github.com/emeueme/Calculadora-de-partidas-Rankeadas" target="_blank" rel="noopener" class="project-card">
-          <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
+        <a href="https://github.com/emeueme/Calculadora-de-partidas-Rankeadas" target="_blank" rel="noopener" class="card project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-calculator"></i></div>
+            <i class="fa-solid fa-arrow-up-right-from-square external-link"></i>
+          </div>
           <h3>Calculadora Rankeada</h3>
-          <p>Aplicação interativa em JavaScript voltada para o cálculo dinâmico de saldo de vitórias, derrotas e classificação por faixas.</p>
-          <span class="card-link">Ver Repositório <i class="fa-solid fa-arrow-right-long"></i></span>
+          <p>Aplicação interativa para cálculo dinâmico de saldo de vitórias e ranqueamento em faixas de nível predefinidas.</p>
+          <div class="project-footer">
+            <span>JavaScript • Algoritmos</span>
+          </div>
         </a>
       </div>
     </section>
 
     <!-- STACK TECNOLÓGICA -->
-    <section class="section-block">
-      <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> 04. // Stack_Tecnológica</h2>
-      <div class="skills-bento-grid">
-        <div class="skill-card">
-          <h4><i class="fa-solid fa-terminal"></i> Linguagens & Lógica</h4>
-          <p>Desenvolvimento focado em lógica estruturada, algoritmos e resolução de problemas.</p>
-          <div class="sub-tags">
+    <section class="section">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>Stack Tecnológica</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="card skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-terminal"></i>
+            <h3>Linguagens</h3>
+          </div>
+          <p>Desenvolvimento focado em lógica, algoritmos e automação.</p>
+          <div class="mini-tags">
             <span>Python</span>
             <span>JavaScript</span>
-            <span>Estruturas de Dados</span>
+            <span>C</span>
           </div>
         </div>
 
-        <div class="skill-card">
-          <h4><i class="fa-solid fa-database"></i> Dados & Bancos</h4>
-          <p>Modelagem relacional e estruturação de consultas para persistência de dados.</p>
-          <div class="sub-tags">
+        <div class="card skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-database"></i>
+            <h3>Bancos de Dados</h3>
+          </div>
+          <p>Modelagem relacional e estruturação de consultas SQL.</p>
+          <div class="mini-tags">
             <span>MySQL</span>
-            <span>Modelagem SQL</span>
-            <span>ETL Basics</span>
+            <span>Consultas SQL</span>
           </div>
         </div>
 
-        <div class="skill-card">
-          <h4><i class="fa-solid fa-eye"></i> IA & Computação</h4>
-          <p>Aplicações práticas voltadas para visão computacional e automação inteligente.</p>
-          <div class="sub-tags">
+        <div class="card skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-brain"></i>
+            <h3>IA & Visão</h3>
+          </div>
+          <p>Processamento e análise visual inteligente de imagens.</p>
+          <div class="mini-tags">
             <span>OpenCV</span>
-            <span>Processamento de Imagens</span>
+            <span>Processamento de Imagem</span>
           </div>
         </div>
 
-        <div class="skill-card">
-          <h4><i class="fa-solid fa-toolbox"></i> Ferramentas & Git</h4>
-          <p>Controle de versão e organização de ambientes de desenvolvimento.</p>
-          <div class="sub-tags">
-            <span>Git / GitHub</span>
+        <div class="card skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-code-branch"></i>
+            <h3>Ferramentas</h3>
+          </div>
+          <p>Controle de versão e gestão de ambiente de desenvolvimento.</p>
+          <div class="mini-tags">
+            <span>Git</span>
+            <span>GitHub</span>
             <span>VS Code</span>
-            <span>Ambientes Virtuais</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
-      <p>© 2026 Matheus Souza. Compilado com foco em Dados, IA e Alta Performance.</p>
+    <footer class="footer">
+      <p>© 2026 Matheus Souza. Desenvolvido para Ciência de Dados & IA.</p>
     </footer>
 
   </div>
 
-<script>
-  const texts = [
-    "Estudante de Ciência de Dados & Inteligência Artificial",
-    "Especializando em Python, MySQL & OpenCV",
-    "Focado em Arquitetura de Dados & Machine Learning"
-  ];
-  let count = 0;
-  let index = 0;
-  let currentText = "";
-  let letter = "";
+  <script>
+    const texts = [
+      "Estudante de Ciência de Dados & IA",
+      "Desenvolvedor Python, MySQL & OpenCV",
+      "Focado em IA e Soluções Baseadas em Dados"
+    ];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
 
-  (function type() {
-    if (count === texts.length) {
-      count = 0;
-    }
-    currentText = texts[count];
-    letter = currentText.slice(0, ++index);
+    (function type() {
+      if (count === texts.length) {
+        count = 0;
+      }
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
 
-    document.getElementById("typewriter").textContent = letter;
-    if (letter.length === currentText.length) {
-      count++;
-      index = 0;
-      setTimeout(type, 2500);
-    } else {
-      setTimeout(type, 50);
-    }
-  })();
-</script>
+      const el = document.getElementById("typewriter");
+      if (el) el.textContent = letter;
 
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 2200);
+      } else {
+        setTimeout(type, 45);
+      }
+    })();
+  </script>
 </body>
 </html>
