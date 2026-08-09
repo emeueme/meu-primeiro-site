@@ -41,10 +41,17 @@ header h1 {
 .tech-tags span {
   background: #1e293b;
   color: #cbd5e1;
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tech-tags span i {
+  color: #38bdf8;
 }
 
 .tech-tags .highlight-tag {
@@ -64,6 +71,9 @@ header h1 {
   color: #38bdf8;
   text-decoration: none;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   transition: opacity 0.2s;
 }
 
@@ -129,11 +139,10 @@ section.sobre p {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
-/* Ajuste dos ícones */
 .card h3 i {
-  margin-right: 12px;
   font-size: 1.1rem;
 }
 
