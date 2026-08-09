@@ -1,19 +1,19 @@
-/* Efeito de luz ambiente sutil em amarelo/âmbar */
+/* Efeito de luz ambiente sofisticado */
 .bg-glow {
   position: fixed;
   top: -120px;
   left: 50%;
   transform: translateX(-50%);
-  width: 600px;
-  height: 250px;
-  background: radial-gradient(circle, rgba(250, 204, 21, 0.07) 0%, rgba(9, 13, 22, 0) 70%);
+  width: 700px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(250, 204, 21, 0.08) 0%, rgba(9, 13, 22, 0) 70%);
   z-index: -1;
   pointer-events: none;
 }
 
 body {
   margin: 0;
-  background: #090d16; /* Fundo escuro premium */
+  background: #07090e;
   font-family: 'Inter', sans-serif;
   color: #f1f5f9;
   line-height: 1.7;
@@ -21,28 +21,58 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 960px;
   margin: auto;
   padding: 80px 20px;
 }
 
 header {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
+}
+
+/* Badge de status com animação de pulso */
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(250, 204, 21, 0.08);
+  border: 1px solid rgba(250, 204, 21, 0.25);
+  color: #facc15;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background: #facc15;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #facc15;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
 }
 
 header h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin-bottom: 8px;
-  letter-spacing: -1px;
-  font-weight: 700;
-  color: #ffffff; /* Branco puro em destaque */
+  letter-spacing: -1.5px;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 .subtitle {
-  color: #facc15; /* Amarelo moderno e elegante */
-  font-weight: 600;
-  font-size: 1.15rem;
+  color: #94a3b8;
+  font-weight: 500;
+  font-size: 1.2rem;
   margin-bottom: 24px;
 }
 
@@ -68,16 +98,10 @@ header h1 {
 }
 
 .tech-tags span i {
-  color: #facc15; /* Ícones em amarelo */
-}
-
-.tech-tags .highlight-tag {
-  background: rgba(250, 204, 21, 0.08);
   color: #facc15;
-  border: 1px solid rgba(250, 204, 21, 0.25);
 }
 
-/* Estilos dos Botões Modernos */
+/* Botões Modernos */
 .links {
   display: flex;
   justify-content: center;
@@ -88,7 +112,7 @@ header h1 {
 }
 
 .btn-primary, .btn-secondary {
-  padding: 11px 22px;
+  padding: 12px 24px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
@@ -100,15 +124,15 @@ header h1 {
 }
 
 .btn-primary {
-  background: #facc15; /* Botão principal em amarelo marcante */
-  color: #090d16;     /* Texto preto para contraste perfeito */
-  box-shadow: 0 4px 14px rgba(250, 204, 21, 0.2);
+  background: #facc15;
+  color: #07090e;
+  box-shadow: 0 4px 20px rgba(250, 204, 21, 0.25);
 }
 
 .btn-primary:hover {
   background: #fde047;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(250, 204, 21, 0.35);
+  box-shadow: 0 6px 25px rgba(250, 204, 21, 0.4);
 }
 
 .btn-secondary {
@@ -124,17 +148,25 @@ header h1 {
 }
 
 section {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 section h2 {
   font-size: 1.4rem;
   margin-bottom: 20px;
-  border-left: 4px solid #facc15; /* Detalhe lateral em amarelo */
+  border-left: 4px solid #facc15;
   padding-left: 12px;
   font-weight: 600;
   letter-spacing: -0.3px;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+section h2 i {
+  color: #facc15;
+  font-size: 1.2rem;
 }
 
 /* Texto Justificado Profissional */
@@ -145,15 +177,77 @@ section.sobre p.justified-text {
   text-justify: inter-word;
 }
 
+/* DESTAQUE DE PROJETO (HERO CARD) */
+.hero-card {
+  background: linear-gradient(135deg, #111827 0%, #0d121f 100%);
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  border-radius: 20px;
+  padding: 35px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.hero-card:hover {
+  border-color: #facc15;
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(250, 204, 21, 0.15);
+}
+
+.project-tag {
+  display: inline-block;
+  background: rgba(250, 204, 21, 0.1);
+  color: #facc15;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.hero-card h3 {
+  margin: 0 0 12px 0;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.hero-card p {
+  color: #94a3b8;
+  font-size: 1.02rem;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+.project-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-techs span {
+  background: #07090e;
+  color: #cbd5e1;
+  border: 1px solid #1f2937;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* OUTROS PROJETOS (GRIDS) */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .card {
   background: #111827;
-  padding: 26px;
+  padding: 24px;
   border-radius: 16px;
   text-decoration: none;
   color: white;
@@ -163,37 +257,63 @@ section.sobre p.justified-text {
   flex-direction: column;
 }
 
-.card.featured {
-  border-color: rgba(250, 204, 21, 0.35);
-  background: linear-gradient(145deg, #111827, #161612); /* Sutil toque quente no fundo do card principal */
-}
-
 .card:hover {
   background: #172033;
-  border-color: #facc15; /* Borda fica amarela ao passar o mouse */
+  border-color: #facc15;
   transform: translateY(-6px);
   box-shadow: 0 12px 30px -10px rgba(250, 204, 21, 0.15);
 }
 
 .card h3 {
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: #facc15;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.card h3 i {
-  font-size: 1.1rem;
-}
-
 .card p {
   color: #94a3b8;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   margin: 0;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.skill-box {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 20px;
+  transition: all 0.25s ease;
+}
+
+.skill-box:hover {
+  border-color: rgba(250, 204, 21, 0.4);
+  transform: translateY(-3px);
+}
+
+.skill-box h4 {
+  margin: 0 0 8px 0;
+  color: #facc15;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-box p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.88rem;
 }
 
 footer {
