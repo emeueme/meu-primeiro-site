@@ -3,8 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matheus Souza | Data Science & AI Portfolio</title>
+  <title>Matheus Souza | AI & Data Science Portfolio</title>
   
+  <!-- SEO & Open Graph Meta Tags (Preview em redes sociais como LinkedIn e WhatsApp) -->
+  <meta name="description" content="Portfólio de Matheus Souza — Estudante de Ciência de Dados & IA no SENAI CIMATEC. Projetos em Python, MySQL, OpenCV e Análise de Dados.">
+  <meta property="og:title" content="Matheus Souza | AI & Data Science Portfolio">
+  <meta property="og:description" content="Estudante de Ciência de Dados & IA no SENAI CIMATEC. Projetos práticos com Python, MySQL, OpenCV e visualização de dados.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://matheussouza.vercel.app">
+  <meta property="og:image" content="https://raw.githubusercontent.com/emeueme/controle-financeiro-python/main/preview.png">
+  
+  <!-- Favicon (Ícone na aba do navegador em SVG inline) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+
   <!-- CSS Principal -->
   <link rel="stylesheet" href="style.css">
   
@@ -40,9 +51,10 @@
           <a href="Matheus Souza - Curriculo.pdf" target="_blank" class="btn btn-secondary">
             <i class="fa-solid fa-file-pdf"></i> Currículo PDF
           </a>
-          <a href="mailto:itsemezing@outlook.com" class="btn btn-secondary">
-            <i class="fa-solid fa-envelope"></i> E-mail
-          </a>
+          <!-- Botão interativo de Copiar E-mail -->
+          <button id="btn-copy-email" class="btn btn-secondary" onclick="copyEmail()">
+            <i class="fa-solid fa-envelope" id="email-icon"></i> <span id="email-text">Copiar E-mail</span>
+          </button>
         </div>
       </div>
 
@@ -250,7 +262,9 @@
 
   </div>
 
+  <!-- SCRIPTS -->
   <script>
+    // Efeito Typewriter
     const texts = [
       "Estudante de Ciência de Dados & IA",
       "Desenvolvedor Python, MySQL & OpenCV",
@@ -279,6 +293,26 @@
         setTimeout(type, 45);
       }
     })();
+
+    // Função para Copiar E-mail com Feedback Visual
+    function copyEmail() {
+      const email = "itsemezing@outlook.com";
+      const emailText = document.getElementById("email-text");
+      const emailIcon = document.getElementById("email-icon");
+      const btn = document.getElementById("btn-copy-email");
+
+      navigator.clipboard.writeText(email).then(() => {
+        emailText.textContent = "E-mail Copiado!";
+        emailIcon.className = "fa-solid fa-check";
+        btn.classList.add("copied");
+
+        setTimeout(() => {
+          emailText.textContent = "Copiar E-mail";
+          emailIcon.className = "fa-solid fa-envelope";
+          btn.classList.remove("copied");
+        }, 2500);
+      });
+    }
   </script>
 </body>
 </html>
