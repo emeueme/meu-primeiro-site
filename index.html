@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Google Fonts: Inter & Fira Code (para a pegada de código/tech) -->
+  <!-- Google Fonts: Inter & Fira Code -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +18,7 @@
 
 <div class="container">
 
-  <!-- HEADER COM IDENTIDADE FORTE -->
+  <!-- HEADER -->
   <header>
     <div class="badge-status">
       <span class="pulse-dot"></span> 
@@ -88,22 +88,19 @@
         </div>
       </div>
       
-      <!-- Painel de Métricas / Dados simulando um Dashboard -->
+      <!-- Painel de Destaques Técnicos do Projeto (Sem barras fictícias) -->
       <div class="hero-stats-side">
         <div class="stat-box">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Automação de Leitura</span>
-          <div class="mini-progress"><div class="fill" style="width: 100%;"></div></div>
+          <span class="stat-number">Visão Computacional</span>
+          <span class="stat-label">Processamento e segmentação de imagem via OpenCV</span>
         </div>
         <div class="stat-box">
-          <span class="stat-number">Real-Time</span>
-          <span class="stat-label">Processamento OpenCV</span>
-          <div class="mini-progress"><div class="fill" style="width: 90%;"></div></div>
+          <span class="stat-number">Identificação IOT</span>
+          <span class="stat-label">Integração com leitura rápida de QR Code</span>
         </div>
         <div class="stat-box highlight-stat">
           <span class="stat-number">Data-Driven</span>
-          <span class="stat-label">Redução de Desperdício Escolar</span>
-          <div class="mini-progress"><div class="fill" style="width: 85%;"></div></div>
+          <span class="stat-label">Análise direcionada à redução de desperdício</span>
         </div>
       </div>
     </div>
@@ -137,43 +134,60 @@
     </div>
   </section>
 
-  <!-- STACK TECNOLÓGICA COM BARRAS DE PROGRESSO / NÍVEL -->
+  <!-- STACK TECNOLÓGICA (FORMATO CLEAN, SEM BARRAS FICTÍCIAS) -->
   <section class="skills">
     <h2><i class="fa-solid fa-layer-group"></i> 04. // Stack_Tecnológica</h2>
     <div class="skills-grid">
       <div class="skill-box mouse-spotlight">
         <h4><i class="fa-solid fa-terminal"></i> Linguagens & Lógica</h4>
-        <p>Python, JavaScript, Algoritmos, Estruturas de Dados</p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+        <p>Desenvolvimento focado em lógica estruturada, algoritmos e resolução de problemas.</p>
+        <div class="tag-list">
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>Estruturas de Dados</span>
+        </div>
       </div>
+      
       <div class="skill-box mouse-spotlight">
         <h4><i class="fa-solid fa-database"></i> Dados & Bancos</h4>
-        <p>MySQL, Modelagem Relacional, Consultas SQL, ETL</p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+        <p>Modelagem relacional e estruturação de consultas para persistência de dados.</p>
+        <div class="tag-list">
+          <span>MySQL</span>
+          <span>Modelagem SQL</span>
+          <span>ETL Basics</span>
+        </div>
       </div>
+      
       <div class="skill-box mouse-spotlight">
         <h4><i class="fa-solid fa-eye"></i> IA & Computação</h4>
-        <p>OpenCV, Processamento de Imagens, Visão Computacional</p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+        <p>Aplicações práticas voltadas para visão computacional e automação inteligente.</p>
+        <div class="tag-list">
+          <span>OpenCV</span>
+          <span>Processamento de Imagens</span>
+        </div>
       </div>
+      
       <div class="skill-box mouse-spotlight">
-        <h4><i class="fa-solid fa-toolbox"></i> Ferramentas</h4>
-        <p>Git, GitHub, VS Code, Ambientes Virtuais</p>
-        <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+        <h4><i class="fa-solid fa-toolbox"></i> Ferramentas & Git</h4>
+        <p>Controle de versão e organização de ambientes de desenvolvimento.</p>
+        <div class="tag-list">
+          <span>Git / GitHub</span>
+          <span>VS Code</span>
+          <span>Ambientes Virtuais</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Matheus Souza. Compilado com paixão por Dados, IA e Alta Performance.</p>
+    <p>© 2026 Matheus Souza. Compilado com foco em Dados, IA e Alta Performance.</p>
   </footer>
 
 </div>
 
-<!-- Script leve para interatividade de luz e mouse -->
+<!-- Script leve para efeito interativo de iluminação do cursor -->
 <script>
-  // Efeito Spotlight Dinâmico no Mouse
   document.querySelectorAll('.mouse-spotlight').forEach(card => {
     card.addEventListener('mousemove', e => {
       const rect = card.getBoundingClientRect();
