@@ -1,20 +1,20 @@
-/* Efeito de luz ambiente de fundo (Glow moderno) */
+/* Efeito de luz ambiente sutil em amarelo/âmbar */
 .bg-glow {
   position: fixed;
-  top: -100px;
+  top: -120px;
   left: 50%;
   transform: translateX(-50%);
-  width: 500px;
+  width: 600px;
   height: 250px;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, rgba(9, 13, 22, 0) 70%);
+  background: radial-gradient(circle, rgba(250, 204, 21, 0.07) 0%, rgba(9, 13, 22, 0) 70%);
   z-index: -1;
   pointer-events: none;
 }
 
 body {
   margin: 0;
-  background: #090d16;
-  font-family: 'Inter', sans-serif; /* Tipografia limpa e moderna */
+  background: #090d16; /* Fundo escuro premium */
+  font-family: 'Inter', sans-serif;
   color: #f1f5f9;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -36,11 +36,11 @@ header h1 {
   margin-bottom: 8px;
   letter-spacing: -1px;
   font-weight: 700;
-  color: #ffffff;
+  color: #ffffff; /* Branco puro em destaque */
 }
 
 .subtitle {
-  color: #38bdf8;
+  color: #facc15; /* Amarelo moderno e elegante */
   font-weight: 600;
   font-size: 1.15rem;
   margin-bottom: 24px;
@@ -68,13 +68,13 @@ header h1 {
 }
 
 .tech-tags span i {
-  color: #38bdf8;
+  color: #facc15; /* Ícones em amarelo */
 }
 
 .tech-tags .highlight-tag {
-  background: rgba(56, 189, 248, 0.08);
-  color: #38bdf8;
-  border: 1px solid rgba(56, 189, 248, 0.25);
+  background: rgba(250, 204, 21, 0.08);
+  color: #facc15;
+  border: 1px solid rgba(250, 204, 21, 0.25);
 }
 
 /* Estilos dos Botões Modernos */
@@ -100,15 +100,15 @@ header h1 {
 }
 
 .btn-primary {
-  background: #38bdf8;
-  color: #020617;
-  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.25);
+  background: #facc15; /* Botão principal em amarelo marcante */
+  color: #090d16;     /* Texto preto para contraste perfeito */
+  box-shadow: 0 4px 14px rgba(250, 204, 21, 0.2);
 }
 
 .btn-primary:hover {
-  background: #7dd3fc;
+  background: #fde047;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+  box-shadow: 0 6px 20px rgba(250, 204, 21, 0.35);
 }
 
 .btn-secondary {
@@ -130,10 +130,11 @@ section {
 section h2 {
   font-size: 1.4rem;
   margin-bottom: 20px;
-  border-left: 4px solid #38bdf8;
+  border-left: 4px solid #facc15; /* Detalhe lateral em amarelo */
   padding-left: 12px;
   font-weight: 600;
   letter-spacing: -0.3px;
+  color: #ffffff;
 }
 
 /* Texto Justificado Profissional */
@@ -163,21 +164,21 @@ section.sobre p.justified-text {
 }
 
 .card.featured {
-  border-color: rgba(56, 189, 248, 0.35);
-  background: linear-gradient(145deg, #111827, #0b1329);
+  border-color: rgba(250, 204, 21, 0.35);
+  background: linear-gradient(145deg, #111827, #161612); /* Sutil toque quente no fundo do card principal */
 }
 
 .card:hover {
   background: #172033;
-  border-color: #38bdf8;
+  border-color: #facc15; /* Borda fica amarela ao passar o mouse */
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px -10px rgba(56, 189, 248, 0.15);
+  box-shadow: 0 12px 30px -10px rgba(250, 204, 21, 0.15);
 }
 
 .card h3 {
   margin-top: 0;
   margin-bottom: 12px;
-  color: #38bdf8;
+  color: #facc15;
   font-size: 1.15rem;
   font-weight: 600;
   display: flex;
