@@ -3,26 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matheus Souza | Portfólio</title>
+  <title>Matheus Souza | AI & Data Scientist Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Google Fonts: Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Inter & Fira Code (para a pegada de código/tech) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="bg-glow"></div>
+<!-- Camada de Fundo Dinâmica / Grade Cyber -->
+<div class="cyber-grid"></div>
+<div class="ambient-glow"></div>
 
 <div class="container">
 
-  <!-- HEADER -->
+  <!-- HEADER COM IDENTIDADE FORTE -->
   <header>
     <div class="badge-status">
-      <span class="pulse-dot"></span> Disponível para estágio em IA & Dados
+      <span class="pulse-dot"></span> 
+      <span class="status-text">[ STATUS: DISPONÍVEL PARA ESTÁGIO EM IA & DADOS ]</span>
     </div>
-    <h1>Matheus Souza</h1>
-    <p class="subtitle">Estudante de Ciência de Dados & Inteligência Artificial</p>
+    
+    <h1 class="glitch-title">Matheus Souza</h1>
+    <p class="subtitle">Estudante de Ciência de Dados & Inteligência Artificial <span class="blink-cursor">_</span></p>
     
     <div class="tech-tags">
       <span><i class="fa-brands fa-python"></i> Python</span>
@@ -36,37 +40,45 @@
         <i class="fa-brands fa-linkedin"></i> LinkedIn
       </a>
       <a href="Matheus Souza - Curriculo.pdf" target="_blank" class="btn-secondary">
-        <i class="fa-solid fa-file-pdf"></i> Currículo
+        <i class="fa-solid fa-file-pdf"></i> Currículo PDF
       </a>
       <a href="mailto:itsemezing@outlook.com" class="btn-secondary">
-        <i class="fa-solid fa-envelope"></i> Email
+        <i class="fa-solid fa-envelope"></i> Contato Direto
       </a>
     </div>
   </header>
 
   <!-- SOBRE MIM -->
   <section class="sobre">
-    <h2><i class="fa-solid fa-user-astronaut"></i> Sobre mim</h2>
-    <p class="justified-text">
-      Estudante de Ciência de Dados & Inteligência Artificial no SENAI CIMATEC. 
-      Focado em desenvolvimento de software e soluções baseadas em dados, possuo 
-      experiência prática em Python, MySQL e versionamento com Git/GitHub. 
-      Estou em busca de oportunidades de estágio remoto onde possa aplicar 
-      meus conhecimentos técnicos e colaborar em projetos inovadores.
-    </p>
+    <h2><i class="fa-solid fa-terminal"></i> 01. // Sobre_mim</h2>
+    <div class="terminal-box">
+      <div class="terminal-header">
+        <span class="dot-red"></span>
+        <span class="dot-yellow"></span>
+        <span class="dot-green"></span>
+        <span class="terminal-title">matheus@cimatec-ai:~</span>
+      </div>
+      <p class="justified-text">
+        Estudante de Ciência de Dados & Inteligência Artificial no <strong>SENAI CIMATEC</strong>. 
+        Focado em desenvolvimento de software e soluções analíticas baseadas em dados, possuo 
+        experiência prática em Python, MySQL e versionamento com Git/GitHub. 
+        Em busca constante de oportunidades de estágio remoto onde possa transformar problemas complexos 
+        em código limpo e insights acionáveis.
+      </p>
+    </div>
   </section>
 
-  <!-- PROJETO FLAGSHIP (LAYOUT ASSIMÉTRICO DE ALTO IMPACTO) -->
+  <!-- PROJETO FLAGSHIP (DESTAQUE MÁXIMO) -->
   <section class="featured-project">
-    <h2><i class="fa-solid fa-fire"></i> Projeto Flagship em Destaque</h2>
+    <h2><i class="fa-solid fa-fire"></i> 02. // Projeto_Flagship</h2>
     
-    <div class="hero-split-card">
+    <div class="hero-split-card mouse-spotlight">
       <div class="hero-text-side">
-        <span class="project-tag">Visão Computacional & IoT • Salvador-BA</span>
+        <span class="project-tag">VISÃO COMPUTACIONAL & IOT • SALVADOR-BA</span>
         <h3>Monitoramento da Alimentação Escolar</h3>
         <p>
           Liderança de projeto tecnológico voltado para a análise automatizada de consumo e desperdício de alimentos em ambiente escolar. 
-          Combina varredura inteligente por QR Code com processamento avançado de imagens via <strong>OpenCV</strong> para transformar dados brutos em inteligência nutricional acionável.
+          Combina varredura inteligente por QR Code com processamento avançado de imagens via <strong>OpenCV</strong> para transformar dados brutos em inteligência nutricional estruturada.
         </p>
         <div class="project-techs">
           <span>Python</span>
@@ -76,19 +88,22 @@
         </div>
       </div>
       
-      <!-- Lado visual / métricas simuladas de impacto -->
+      <!-- Painel de Métricas / Dados simulando um Dashboard -->
       <div class="hero-stats-side">
         <div class="stat-box">
           <span class="stat-number">100%</span>
           <span class="stat-label">Automação de Leitura</span>
+          <div class="mini-progress"><div class="fill" style="width: 100%;"></div></div>
         </div>
         <div class="stat-box">
-          <span class="stat-number">CV</span>
-          <span class="stat-label">Processamento em Tempo Real</span>
+          <span class="stat-number">Real-Time</span>
+          <span class="stat-label">Processamento OpenCV</span>
+          <div class="mini-progress"><div class="fill" style="width: 90%;"></div></div>
         </div>
         <div class="stat-box highlight-stat">
           <span class="stat-number">Data-Driven</span>
-          <span class="stat-label">Insights de Desperdício</span>
+          <span class="stat-label">Redução de Desperdício Escolar</span>
+          <div class="mini-progress"><div class="fill" style="width: 85%;"></div></div>
         </div>
       </div>
     </div>
@@ -96,55 +111,79 @@
 
   <!-- OUTROS PROJETOS -->
   <section class="projetos">
-    <h2><i class="fa-solid fa-code"></i> Outros Projetos Relevantes</h2>
+    <h2><i class="fa-solid fa-code-branch"></i> 03. // Outros_Projetos</h2>
 
     <div class="cards">
-      <a href="https://github.com/emeueme/controle-financeiro-python" target="_blank" rel="noopener" class="card">
-        <h3><i class="fa-solid fa-chart-line"></i> Controle Financeiro Pessoal</h3>
-        <p>Aplicação desktop em Python com MySQL, dashboard e relatórios em PDF, Excel e gráficos dinâmicos.</p>
+      <a href="https://github.com/emeueme/controle-financeiro-python" target="_blank" rel="noopener" class="card mouse-spotlight">
+        <div class="card-top-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Controle Financeiro Pessoal</h3>
+        <p>Aplicação desktop robusta em Python com MySQL, painel de controle interativo e geração automatizada de relatórios em PDF/Excel.</p>
+        <div class="card-footer-link">Ver Repositório <i class="fa-solid fa-arrow-right"></i></div>
       </a>
 
-      <a href="https://github.com/emeueme/Classificador-de-nivel-de-Heroi" target="_blank" rel="noopener" class="card">
-        <h3><i class="fa-solid fa-robot"></i> Classificador de Nível</h3>
-        <p>Projeto em JavaScript focado em lógica de programação estruturada e classificação avançada por regras.</p>
+      <a href="https://github.com/emeueme/Classificador-de-nivel-de-Heroi" target="_blank" rel="noopener" class="card mouse-spotlight">
+        <div class="card-top-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>Classificador de Nível</h3>
+        <p>Projeto estruturado em JavaScript focado em lógica de programação avançada, tomada de decisão e regras de negócio escaláveis.</p>
+        <div class="card-footer-link">Ver Repositório <i class="fa-solid fa-arrow-right"></i></div>
       </a>
 
-      <a href="https://github.com/emeueme/Calculadora-de-partidas-Rankeadas" target="_blank" rel="noopener" class="card">
-        <h3><i class="fa-solid fa-calculator"></i> Calculadora Rankeada</h3>
-        <p>Aplicação em JavaScript voltada para o cálculo de saldo de vitórias, derrotas e ranqueamento lógico.</p>
+      <a href="https://github.com/emeueme/Calculadora-de-partidas-Rankeadas" target="_blank" rel="noopener" class="card mouse-spotlight">
+        <div class="card-top-icon"><i class="fa-solid fa-calculator"></i></div>
+        <h3>Calculadora Rankeada</h3>
+        <p>Aplicação interativa em JavaScript voltada para o cálculo dinâmico de saldo de vitórias, derrotas e classificação por faixas.</p>
+        <div class="card-footer-link">Ver Repositório <i class="fa-solid fa-arrow-right"></i></div>
       </a>
     </div>
   </section>
 
-  <!-- STACK / HABILIDADES -->
+  <!-- STACK TECNOLÓGICA COM BARRAS DE PROGRESSO / NÍVEL -->
   <section class="skills">
-    <h2><i class="fa-solid fa-layer-group"></i> Stack Tecnológica & Competências</h2>
+    <h2><i class="fa-solid fa-layer-group"></i> 04. // Stack_Tecnológica</h2>
     <div class="skills-grid">
-      <div class="skill-box">
+      <div class="skill-box mouse-spotlight">
         <h4><i class="fa-solid fa-terminal"></i> Linguagens & Lógica</h4>
-        <p>Python, JavaScript, Algoritmos e Estruturas de Dados</p>
+        <p>Python, JavaScript, Algoritmos, Estruturas de Dados</p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
       </div>
-      <div class="skill-box">
+      <div class="skill-box mouse-spotlight">
         <h4><i class="fa-solid fa-database"></i> Dados & Bancos</h4>
-        <p>MySQL, Modelagem Relacional, Consultas e ETL básico</p>
+        <p>MySQL, Modelagem Relacional, Consultas SQL, ETL</p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
       </div>
-      <div class="skill-box">
+      <div class="skill-box mouse-spotlight">
         <h4><i class="fa-solid fa-eye"></i> IA & Computação</h4>
         <p>OpenCV, Processamento de Imagens, Visão Computacional</p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
       </div>
-      <div class="skill-box">
+      <div class="skill-box mouse-spotlight">
         <h4><i class="fa-solid fa-toolbox"></i> Ferramentas</h4>
-        <p>Git, GitHub, VS Code, Gestão de Ambientes</p>
+        <p>Git, GitHub, VS Code, Ambientes Virtuais</p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Matheus Souza. Desenvolvido com foco absoluto em alta performance e dados.</p>
+    <p>© 2026 Matheus Souza. Compilado com paixão por Dados, IA e Alta Performance.</p>
   </footer>
 
 </div>
+
+<!-- Script leve para interatividade de luz e mouse -->
+<script>
+  // Efeito Spotlight Dinâmico no Mouse
+  document.querySelectorAll('.mouse-spotlight').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+</script>
 
 </body>
 </html>
