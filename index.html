@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matheus Souza | AI & Data Science Portfolio</title>
   
-  <!-- SEO & Open Graph Meta Tags (Preview em redes sociais como LinkedIn e WhatsApp) -->
+  <!-- SEO & Open Graph Meta Tags (Preview para LinkedIn e WhatsApp) -->
   <meta name="description" content="Portfólio de Matheus Souza — Estudante de Ciência de Dados & IA no SENAI CIMATEC. Projetos em Python, MySQL, OpenCV e Análise de Dados.">
   <meta property="og:title" content="Matheus Souza | AI & Data Science Portfolio">
   <meta property="og:description" content="Estudante de Ciência de Dados & IA no SENAI CIMATEC. Projetos práticos com Python, MySQL, OpenCV e visualização de dados.">
@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://matheussouza.vercel.app">
   <meta property="og:image" content="https://raw.githubusercontent.com/emeueme/controle-financeiro-python/main/preview.png">
   
-  <!-- Favicon (Ícone na aba do navegador em SVG inline) -->
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
 
   <!-- CSS Principal -->
@@ -73,7 +73,7 @@
       </div>
     </header>
 
-    <!-- SOBRE MIM -->
+    <!-- 01. SOBRE MIM -->
     <section class="section">
       <div class="section-header">
         <span class="section-num">01</span>
@@ -96,7 +96,7 @@
       </div>
     </section>
 
-    <!-- PROJETO FLAGSHIP -->
+    <!-- 02. PROJETO FLAGSHIP -->
     <section class="section">
       <div class="section-header">
         <span class="section-num">02</span>
@@ -107,11 +107,18 @@
         <div class="flagship-content">
           <div class="flagship-header">
             <span class="category-badge"><i class="fa-solid fa-microchip"></i> Visão Computacional & IoT</span>
-            <span class="location-badge"><i class="fa-solid fa-location-dot"></i> Salvador - BA</span>
+            <span class="status-dev-badge"><i class="fa-solid fa-rotate fa-spin"></i> Em Desenvolvimento</span>
           </div>
-          <h3>Monitoramento da Alimentação Escolar com Base em Dados</h3>
+
+          <div class="project-title-container">
+            <h3>Monitoramento da Alimentação Escolar com Base em Dados</h3>
+            <div class="institution-tag">
+              <i class="fa-solid fa-building-columns"></i> SENAI CIMATEC
+            </div>
+          </div>
+
           <p>
-            Liderança e desenvolvimento de um sistema para análise automatizada do consumo e desperdício de alimentos no ambiente escolar. 
+            Atuação no desenvolvimento de um sistema para análise automatizada do consumo e desperdício de alimentos no ambiente escolar. 
             A solução integra escaneamento por <strong>QR Code</strong> para identificação ágil e processamento de imagens via <strong>OpenCV</strong> 
             para transformação de dados brutos em métricas acionáveis.
           </p>
@@ -142,14 +149,14 @@
             <div class="stat-icon"><i class="fa-solid fa-chart-pie"></i></div>
             <div>
               <h4>Análise Nutricional</h4>
-              <p>Geração de relatórios para redução do desperdício de alimentos</p>
+              <p>Foco na geração de insights para redução do desperdício</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- OUTROS PROJETOS -->
+    <!-- 03. OUTROS PROJETOS -->
     <section class="section">
       <div class="section-header">
         <span class="section-num">03</span>
@@ -195,7 +202,7 @@
       </div>
     </section>
 
-    <!-- STACK TECNOLÓGICA -->
+    <!-- 04. STACK TECNOLÓGICA -->
     <section class="section">
       <div class="section-header">
         <span class="section-num">04</span>
@@ -294,7 +301,7 @@
       }
     })();
 
-    // Função para Copiar E-mail com Feedback Visual
+    // Função de Copiar E-mail com Feedback Visual
     function copyEmail() {
       const email = "itsemezing@outlook.com";
       const emailText = document.getElementById("email-text");
