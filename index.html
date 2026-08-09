@@ -7,112 +7,81 @@
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Google Fonts: Inter & Fira Code -->
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Camadas Visuais HUD / CRT -->
-<div class="crt-overlay"></div>
-<div class="cyber-grid"></div>
-<div class="ambient-glow"></div>
+  <div class="page-wrapper">
 
-<div class="main-layout-wrapper">
-
-  <!-- SIDEBAR DE TELEMETRIA EM TEMPO REAL -->
-  <aside class="sidebar-telemetry">
-    <div class="telemetry-box">
-      <div class="telemetry-header"><i class="fa-solid fa-microchip"></i> SYSTEM_METRICS</div>
-      <div class="label">STATUS_SISTEMA</div>
-      <div class="value pulse-green">[ OPERACIONAL ]</div>
-      
-      <div class="label">NODE_LATENCY</div>
-      <div class="value">18ms</div>
-      
-      <div class="label">MODEL_INFERENCE</div>
-      <div class="value">99.9%</div>
-      
-      <div class="label">CORE_FOCUS</div>
-      <div class="value text-highlight">AI & Data</div>
-    </div>
-
-    <div class="terminal-logs">
-      <div class="telemetry-header"><i class="fa-solid fa-terminal"></i> LIVE_LOGS</div>
-      <div class="logs-content" id="logs">
-        [SYS] Initializing core modules...<br>
-        [SYS] OpenCV pipeline active.<br>
-        [SYS] MySQL connections secure.<br>
-        [AI] Ready for deployment.
-      </div>
-    </div>
-  </aside>
-
-  <!-- CONTEÚDO PRINCIPAL DO PORTFÓLIO -->
-  <div class="container">
-
-    <!-- HEADER / HERO SECTION -->
-    <header class="hero-section">
-      <div class="badge-status">
-        <span class="pulse-dot"></span> 
-        <span class="status-text">[ STATUS: DISPONÍVEL PARA ESTÁGIO EM IA & DADOS ]</span>
-      </div>
-      
-      <h1 class="glitch-title" data-text="Matheus Souza">Matheus Souza</h1>
-      <p class="subtitle" id="typewriter"></p>
-      
-      <div class="tech-tags">
-        <span><i class="fa-brands fa-python"></i> Python</span>
-        <span><i class="fa-solid fa-database"></i> MySQL</span>
-        <span><i class="fa-solid fa-brain"></i> OpenCV & IA</span>
-        <span><i class="fa-brands fa-git-alt"></i> Git/GitHub</span>
+    <!-- HERO BENTO -->
+    <header class="bento-hero">
+      <div class="hero-intro">
+        <div class="availability-badge">
+          <span class="dot"></span> [ STATUS: DISPONÍVEL PARA ESTÁGIO EM IA & DADOS ]
+        </div>
+        <h1>Matheus Souza</h1>
+        <p class="subtitle" id="typewriter"></p>
+        
+        <div class="hero-actions">
+          <a href="https://www.linkedin.com/in/matheussouzagomes" target="_blank" rel="noopener" class="btn-main">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="Matheus Souza - Curriculo.pdf" target="_blank" class="btn-sub">
+            <i class="fa-solid fa-file-pdf"></i> Currículo PDF
+          </a>
+          <a href="mailto:itsemezing@outlook.com" class="btn-sub">
+            <i class="fa-solid fa-envelope"></i> Contato Direto
+          </a>
+        </div>
       </div>
 
-      <div class="links">
-        <a href="https://www.linkedin.com/in/matheussouzagomes" target="_blank" rel="noopener" class="btn-primary">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="Matheus Souza - Curriculo.pdf" target="_blank" class="btn-secondary">
-          <i class="fa-solid fa-file-pdf"></i> Currículo PDF
-        </a>
-        <a href="mailto:itsemezing@outlook.com" class="btn-secondary">
-          <i class="fa-solid fa-envelope"></i> Contato Direto
-        </a>
+      <div class="hero-quick-stats">
+        <div class="mini-stat">
+          <span class="num">SENAI CIMATEC</span>
+          <span class="lbl">Ciência de Dados & IA (Salvador-BA)</span>
+        </div>
+        <div class="mini-stat">
+          <span class="num">Python & MySQL</span>
+          <span class="lbl">Core Stack & Versionamento Git</span>
+        </div>
       </div>
     </header>
 
     <!-- SOBRE MIM -->
-    <section class="sobre">
-      <h2><i class="fa-solid fa-terminal"></i> 01. // Sobre_mim</h2>
-      <div class="terminal-box mouse-spotlight">
-        <div class="terminal-header-bar">
-          <span class="dot-red"></span>
-          <span class="dot-yellow"></span>
-          <span class="dot-green"></span>
-          <span class="terminal-title">matheus@cimatec-ai:~</span>
-        </div>
-        <p class="justified-text">
+    <section class="section-block">
+      <h2 class="section-title"><i class="fa-solid fa-user-astronaut"></i> 01. // Sobre_Mim</h2>
+      <div class="content-card bio-card">
+        <p>
           Estudante de Ciência de Dados & Inteligência Artificial no <strong>SENAI CIMATEC</strong>. 
           Focado em desenvolvimento de software e soluções analíticas baseadas em dados, possuo 
           experiência prática em Python, MySQL e versionamento com Git/GitHub. 
           Em busca constante de oportunidades de estágio onde possa transformar problemas complexos 
           em código limpo e insights acionáveis.
         </p>
+        <div class="tech-chips">
+          <span><i class="fa-brands fa-python"></i> Python</span>
+          <span><i class="fa-solid fa-database"></i> MySQL</span>
+          <span><i class="fa-solid fa-brain"></i> OpenCV & IA</span>
+          <span><i class="fa-brands fa-git-alt"></i> Git/GitHub</span>
+          <span><i class="fa-brands fa-js"></i> JavaScript</span>
+        </div>
       </div>
     </section>
 
     <!-- PROJETO FLAGSHIP -->
-    <section class="featured-project">
-      <h2><i class="fa-solid fa-fire"></i> 02. // Projeto_Flagship</h2>
+    <section class="section-block">
+      <h2 class="section-title"><i class="fa-solid fa-star"></i> 02. // Projeto_Flagship</h2>
       
-      <div class="hero-split-card mouse-spotlight">
-        <div class="hero-text-side">
-          <span class="project-tag">VISÃO COMPUTACIONAL & IOT • SALVADOR-BA</span>
+      <div class="flagship-bento">
+        <div class="flagship-info">
+          <span class="badge-tag">VISÃO COMPUTACIONAL & IOT • SALVADOR-BA</span>
           <h3>Monitoramento da Alimentação Escolar</h3>
           <p>
             Liderança de projeto tecnológico voltado para a análise automatizada de consumo e desperdício de alimentos em ambiente escolar. 
             Combina varredura inteligente por QR Code com processamento avançado de imagens via <strong>OpenCV</strong> para transformar dados brutos em inteligência nutricional estruturada.
           </p>
-          <div class="project-techs">
+          <div class="project-tags">
             <span>Python</span>
             <span>OpenCV</span>
             <span>QR Code API</span>
@@ -120,88 +89,88 @@
           </div>
         </div>
         
-        <div class="hero-stats-side">
-          <div class="stat-box">
-            <span class="stat-number">Visão Computacional</span>
-            <span class="stat-label">Processamento e segmentação de imagem via OpenCV</span>
+        <div class="flagship-metrics">
+          <div class="metric-item">
+            <strong>Visão Computacional</strong>
+            <span>Processamento e segmentação de imagem via OpenCV</span>
           </div>
-          <div class="stat-box">
-            <span class="stat-number">Identificação IOT</span>
-            <span class="stat-label">Integração com leitura rápida de QR Code</span>
+          <div class="metric-item">
+            <strong>Identificação IoT</strong>
+            <span>Integração com leitura rápida de QR Code</span>
           </div>
-          <div class="stat-box highlight-stat">
-            <span class="stat-number">Data-Driven</span>
-            <span class="stat-label">Análise direcionada à redução de desperdício</span>
+          <div class="metric-item highlight">
+            <strong>Data-Driven</strong>
+            <span>Foco analítico na redução de desperdício escolar</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- OUTROS PROJETOS -->
-    <section class="projetos">
-      <h2><i class="fa-solid fa-code-branch"></i> 03. // Outros_Projetos</h2>
+    <section class="section-block">
+      <h2 class="section-title"><i class="fa-solid fa-code-branch"></i> 03. // Outros_Projetos</h2>
 
-      <div class="cards">
-        <a href="https://github.com/emeueme/controle-financeiro-python" target="_blank" rel="noopener" class="card mouse-spotlight">
-          <div class="card-top-icon"><i class="fa-solid fa-chart-line"></i></div>
+      <div class="projects-grid">
+        <a href="https://github.com/emeueme/controle-financeiro-python" target="_blank" rel="noopener" class="project-card">
+          <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
           <h3>Controle Financeiro Pessoal</h3>
           <p>Aplicação desktop robusta em Python com MySQL, painel de controle interativo e geração automatizada de relatórios em PDF/Excel.</p>
-          <div class="card-footer-link">Ver Repositório <i class="fa-solid fa-arrow-right"></i></div>
+          <span class="card-link">Ver Repositório <i class="fa-solid fa-arrow-right-long"></i></span>
         </a>
 
-        <a href="https://github.com/emeueme/Classificador-de-nivel-de-Heroi" target="_blank" rel="noopener" class="card mouse-spotlight">
-          <div class="card-top-icon"><i class="fa-solid fa-robot"></i></div>
+        <a href="https://github.com/emeueme/Classificador-de-nivel-de-Heroi" target="_blank" rel="noopener" class="project-card">
+          <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
           <h3>Classificador de Nível</h3>
           <p>Projeto estruturado em JavaScript focado em lógica de programação avançada, tomada de decisão e regras de negócio escaláveis.</p>
-          <div class="card-footer-link">Ver Repositório <i class="fa-solid fa-arrow-right"></i></div>
+          <span class="card-link">Ver Repositório <i class="fa-solid fa-arrow-right-long"></i></span>
         </a>
 
-        <a href="https://github.com/emeueme/Calculadora-de-partidas-Rankeadas" target="_blank" rel="noopener" class="card mouse-spotlight">
-          <div class="card-top-icon"><i class="fa-solid fa-calculator"></i></div>
+        <a href="https://github.com/emeueme/Calculadora-de-partidas-Rankeadas" target="_blank" rel="noopener" class="project-card">
+          <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
           <h3>Calculadora Rankeada</h3>
           <p>Aplicação interativa em JavaScript voltada para o cálculo dinâmico de saldo de vitórias, derrotas e classificação por faixas.</p>
-          <div class="card-footer-link">Ver Repositório <i class="fa-solid fa-arrow-right"></i></div>
+          <span class="card-link">Ver Repositório <i class="fa-solid fa-arrow-right-long"></i></span>
         </a>
       </div>
     </section>
 
     <!-- STACK TECNOLÓGICA -->
-    <section class="skills">
-      <h2><i class="fa-solid fa-layer-group"></i> 04. // Stack_Tecnológica</h2>
-      <div class="skills-grid">
-        <div class="skill-box mouse-spotlight">
+    <section class="section-block">
+      <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> 04. // Stack_Tecnológica</h2>
+      <div class="skills-bento-grid">
+        <div class="skill-card">
           <h4><i class="fa-solid fa-terminal"></i> Linguagens & Lógica</h4>
           <p>Desenvolvimento focado em lógica estruturada, algoritmos e resolução de problemas.</p>
-          <div class="tag-list">
+          <div class="sub-tags">
             <span>Python</span>
             <span>JavaScript</span>
             <span>Estruturas de Dados</span>
           </div>
         </div>
-        
-        <div class="skill-box mouse-spotlight">
+
+        <div class="skill-card">
           <h4><i class="fa-solid fa-database"></i> Dados & Bancos</h4>
           <p>Modelagem relacional e estruturação de consultas para persistência de dados.</p>
-          <div class="tag-list">
+          <div class="sub-tags">
             <span>MySQL</span>
             <span>Modelagem SQL</span>
             <span>ETL Basics</span>
           </div>
         </div>
-        
-        <div class="skill-box mouse-spotlight">
+
+        <div class="skill-card">
           <h4><i class="fa-solid fa-eye"></i> IA & Computação</h4>
           <p>Aplicações práticas voltadas para visão computacional e automação inteligente.</p>
-          <div class="tag-list">
+          <div class="sub-tags">
             <span>OpenCV</span>
             <span>Processamento de Imagens</span>
           </div>
         </div>
-        
-        <div class="skill-box mouse-spotlight">
+
+        <div class="skill-card">
           <h4><i class="fa-solid fa-toolbox"></i> Ferramentas & Git</h4>
           <p>Controle de versão e organização de ambientes de desenvolvimento.</p>
-          <div class="tag-list">
+          <div class="sub-tags">
             <span>Git / GitHub</span>
             <span>VS Code</span>
             <span>Ambientes Virtuais</span>
@@ -216,10 +185,8 @@
     </footer>
 
   </div>
-</div>
 
 <script>
-  // Efeito de digitação no subtítulo
   const texts = [
     "Estudante de Ciência de Dados & Inteligência Artificial",
     "Especializando em Python, MySQL & OpenCV",
@@ -241,31 +208,11 @@
     if (letter.length === currentText.length) {
       count++;
       index = 0;
-      setTimeout(type, 2000);
+      setTimeout(type, 2500);
     } else {
-      setTimeout(type, 60);
+      setTimeout(type, 50);
     }
   })();
-
-  // Simulação dinâmica de logs na sidebar
-  const logs = document.getElementById('logs');
-  const packets = ["Query executed in 12ms", "OpenCV frame processed", "Data node synchronized", "Model weights loaded", "MySQL transaction committed"];
-  setInterval(() => {
-    const randomPacket = packets[Math.floor(Math.random() * packets.length)];
-    logs.innerHTML += `[DATA] ${randomPacket}<br>`;
-    logs.scrollTop = logs.scrollHeight;
-  }, 3500);
-
-  // Efeito Spotlight do Mouse
-  document.querySelectorAll('.mouse-spotlight').forEach(card => {
-    card.addEventListener('mousemove', e => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      card.style.setProperty('--mouse-x', `${x}px`);
-      card.style.setProperty('--mouse-y', `${y}px`);
-    });
-  });
 </script>
 
 </body>
