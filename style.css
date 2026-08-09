@@ -30,7 +30,6 @@ header h1 {
   margin-bottom: 20px;
 }
 
-/* Estilização das tags de tecnologias */
 .tech-tags {
   display: flex;
   justify-content: center;
@@ -99,7 +98,6 @@ section.sobre p {
   gap: 20px;
 }
 
-/* Card padrão */
 .card {
   background: #111827;
   padding: 24px;
@@ -112,7 +110,6 @@ section.sobre p {
   flex-direction: column;
 }
 
-/* Destaque sutil para o projeto principal */
 .card.featured {
   border-color: rgba(56, 189, 248, 0.4);
   background: linear-gradient(145deg, #111827, #0f172a);
@@ -130,6 +127,14 @@ section.sobre p {
   margin-bottom: 12px;
   color: #38bdf8;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Ajuste dos ícones */
+.card h3 i {
+  margin-right: 12px;
+  font-size: 1.1rem;
 }
 
 .card p {
