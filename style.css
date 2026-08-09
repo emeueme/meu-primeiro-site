@@ -1,53 +1,70 @@
+/* Efeito de luz ambiente de fundo (Glow moderno) */
+.bg-glow {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, rgba(9, 13, 22, 0) 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
 body {
   margin: 0;
   background: #090d16;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Inter', sans-serif; /* Tipografia limpa e moderna */
   color: #f1f5f9;
-  line-height: 1.6;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
   max-width: 900px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 6px;
-  letter-spacing: -0.5px;
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .subtitle {
   color: #38bdf8;
   font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+  font-size: 1.15rem;
+  margin-bottom: 24px;
 }
 
 .tech-tags {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 24px;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
 .tech-tags span {
-  background: #1e293b;
+  background: #111827;
   color: #cbd5e1;
-  padding: 6px 14px;
+  padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  border: 1px solid #1f2937;
 }
 
 .tech-tags span i {
@@ -55,28 +72,28 @@ header h1 {
 }
 
 .tech-tags .highlight-tag {
-  background: rgba(56, 189, 248, 0.1);
+  background: rgba(56, 189, 248, 0.08);
   color: #38bdf8;
-  border: 1px solid rgba(56, 189, 248, 0.3);
+  border: 1px solid rgba(56, 189, 248, 0.25);
 }
 
-/* Estilos dos Botões */
+/* Estilos dos Botões Modernos */
 .links {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   flex-wrap: wrap;
   margin-top: 25px;
 }
 
 .btn-primary, .btn-secondary {
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 11px 22px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
-  transition: all 0.3s;
+  transition: all 0.25s ease;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -84,52 +101,59 @@ header h1 {
 
 .btn-primary {
   background: #38bdf8;
-  color: #090d16;
+  color: #020617;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.25);
 }
 
 .btn-primary:hover {
   background: #7dd3fc;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
 }
 
 .btn-secondary {
-  background: #1e293b;
+  background: #111827;
   color: #f1f5f9;
-  border: 1px solid #334155;
+  border: 1px solid #1f2937;
 }
 
 .btn-secondary:hover {
-  background: #334155;
-  border-color: #475569;
+  background: #1e293b;
+  border-color: #334155;
   transform: translateY(-2px);
 }
 
 section {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 section h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 20px;
   border-left: 4px solid #38bdf8;
   padding-left: 12px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
-section.sobre p {
+/* Texto Justificado Profissional */
+section.sobre p.justified-text {
   color: #cbd5e1;
   font-size: 1.05rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 22px;
 }
 
 .card {
   background: #111827;
-  padding: 24px;
-  border-radius: 14px;
+  padding: 26px;
+  border-radius: 16px;
   text-decoration: none;
   color: white;
   border: 1px solid #1f2937;
@@ -139,22 +163,23 @@ section.sobre p {
 }
 
 .card.featured {
-  border-color: rgba(56, 189, 248, 0.4);
-  background: linear-gradient(145deg, #111827, #0f172a);
+  border-color: rgba(56, 189, 248, 0.35);
+  background: linear-gradient(145deg, #111827, #0b1329);
 }
 
 .card:hover {
-  background: #1e293b;
+  background: #172033;
   border-color: #38bdf8;
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.1);
+  box-shadow: 0 12px 30px -10px rgba(56, 189, 248, 0.15);
 }
 
 .card h3 {
   margin-top: 0;
   margin-bottom: 12px;
   color: #38bdf8;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -174,6 +199,6 @@ footer {
   text-align: center;
   font-size: 0.85rem;
   color: #64748b;
-  border-top: 1px solid #1e293b;
-  padding-top: 30px;
+  border-top: 1px solid #1f2937;
+  padding-top: 35px;
 }
